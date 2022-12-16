@@ -1,0 +1,111 @@
+.text {
+	color: #ffffff;
+	margin: 16px 0;
+	font-size: 16px;
+}
+
+.subtitle {
+	color: #ffffff;
+	margin: 0;
+	font-size: 16px;
+}
+
+.subText {
+	color: #ffffff;
+	margin: 16px 0;
+	font-size: 20px;
+}
+
+.subtitleWrapper {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-items: center;
+	gap: 10px;
+	margin: 0;
+}
+
+.cardMainText {
+	color: #ffffff;
+	margin: 0;
+	margin-top: 16px;
+	font-size: 16px;
+}
+
+.bigText {
+	font-size: 80px;
+	color: #ffffff;
+	margin: 0;
+	font-weight: 500;
+}
+
+.mediumText {
+	font-size: 80px;
+	color: #ffffff;
+	margin: 0;
+	margin-bottom: 10px;
+	font-weight: 400;
+}
+
+.map {
+	display: grid;
+	grid-template-columns: repeat(4, 120px);
+	gap: 10px;
+}
+
+.container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin: 0 300px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.cardContainer {
+	display: flex;
+	flex-direction: row;
+}
+
+.card:nth-child(even) {
+	transform: rotate(20deg);
+	margin-top: 100px;
+	margin-left: 20px;
+	z-index: 20;
+}
+
+.buttons {
+	display: flex;
+	gap: 20px;
+}
+
+.card {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	border: 2px solid;
+	background-color: transparent;
+	backdrop-filter: blur(20px);
+	border-radius: 16px 16px 100px 16px;
+	border-color: #15bffd;
+	padding: 0 15px;
+	width: 200px;
+	z-index: 30;
+	width: 300px;
+	height: 400px;
+	backdrop-filter: blur(20px);
+	background-color: rgb(8, 11, 42); /* Fallback color */
+	background-color: rgba(255, 255, 255, 0.04); /* Black w/opacity/see-through */
+	z-index: 20;
+}
+
+.textBlue {
+	color: #15bffd;
+	font-weight: 700;
+	margin: 0;
+}
+
+.textBiege {
+	color: #968ba1;
+	font-weight: 700;
+}

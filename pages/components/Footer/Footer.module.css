@@ -1,0 +1,64 @@
+.container {
+	display: grid;
+	grid-template-columns: 320px 1fr 1fr 1fr;
+	column-gap: 190px;
+	margin: 0 120px;
+
+	margin-bottom: 0;
+	color: #ffffff;
+}
+
+.titleContainer {
+	display: flex;
+	flex-direction: column;
+	margin: 0;
+}
+
+.imageContainer {
+	display: flex;
+	flex-direction: row;
+	gap: 20px;
+}
+
+.imageContainer img {
+	width: 24px;
+	height: 24px;
+}
+
+.nftcore {
+	width: 129px;
+	height: 48px;
+}
+
+.linkContainer {
+	margin: 0;
+}
+
+.linkContainer h2 {
+	font-weight: 500;
+	font-size: 20px;
+	margin: 0;
+}
+
+.linkContainer h3 {
+	margin: 20px 0;
+	font-weight: 400;
+	font-size: 16px;
+}
+
+.copyright {
+	color: #ffffff;
+	font-size: 14px;
+	font-weight: 400;
+	margin: 0 120px;
+	padding-top: 20px;
+}
+
+.backgroundWrapper {
+	backdrop-filter: blur(20px);
+	background-color: rgb(8, 11, 42); /* Fallback color */
+	background-color: rgba(255, 255, 255, 0.04); /* Black w/opacity/see-through */
+	z-index: 20;
+	padding-top: 80px;
+	padding-bottom: 40px;
+}
