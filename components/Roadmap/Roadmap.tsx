@@ -1,10 +1,10 @@
 import Image from 'next/image'
 import React from 'react'
 import styles from './Roadmap.module.css'
-import Line from '../../../public/Line.svg'
-import PointerLeft from '../../../public/PointerLeft.svg'
-import PointerRight from '../../../public/PointerRight.svg'
-import RoadmapCircle from '../../../public/RoadmapCircle.svg'
+import Line from '../../public/Line.svg'
+import PointerLeft from '../../public/PointerLeft.svg'
+import PointerRight from '../../public/PointerRight.svg'
+import RoadmapCircle from '../../public/RoadmapCircle.svg'
 import { motion } from 'framer-motion'
 
 const data = [

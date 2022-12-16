@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from './Collection.module.css'
 import { motion } from 'framer-motion'
-import avatar from '../../../public/avatar.svg'
+import avatar from '../../public/avatar.svg'
 import Image from 'next/image'
 import { Button } from 'antd'
 

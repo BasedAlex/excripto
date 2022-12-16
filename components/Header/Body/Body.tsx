@@ -1,12 +1,11 @@
-// import Button from 'antd/es/button'
 import { Button } from 'antd'
 import Image from 'next/image'
 import React from 'react'
-import beat from '../../../../public/beat.svg'
+import beat from '../../../public/beat.svg'
 import styles from './Body.module.css'
 import { ArrowRightOutlined } from '@ant-design/icons/lib/icons'
-import etherium from '../../../../public/ethereum.svg'
-import avatar from '../../../../public/avatar.svg'
+import etherium from '../../../public/ethereum.svg'
+import avatar from '../../../public/avatar.svg'
 import { motion } from 'framer-motion'
 
 const data = [

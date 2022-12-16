@@ -3,9 +3,7 @@ import { DownloadOutlined } from '@ant-design/icons/lib/icons'
 import { Button } from 'antd'
 import Image from 'next/image'
 import React from 'react'
-import ellipse59 from '../../../../public/Ellipse59.svg'
-import ellipse60 from '../../../../public/Ellipse60.svg'
-import NFTCore from '../../../../public/NFTCore.svg'
+import NFTCore from '../../../public/NFTcore.svg'
 import styles from './Navigation.module.css'
 
 const Navigation = () => {

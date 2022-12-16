@@ -5,6 +5,9 @@ const nextConfig = {
 	images: {
 		domains: ['https://fakestoreapi.com/', 'localhost'],
 	},
+	typescript: {
+		ignoreBuildErrors: true,
+	},
 }
 
 module.exports = nextConfig

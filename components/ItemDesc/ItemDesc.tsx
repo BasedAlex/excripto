@@ -1,10 +1,10 @@
 import React from 'react'
 import styles from './ItemDesc.module.css'
-import NFTCore from '../../../public/NFTcore.svg'
+import NFTCore from '../../public/NFTcore.svg'
 import Image from 'next/image'
 import Link from 'next/link'
-import ellipse59 from '../../../public/Ellipse59.svg'
-import ellipse60 from '../../../public/Ellipse60.svg'
+import ellipse59 from '../../public/Ellipse59.svg'
+import ellipse60 from '../../public/Ellipse60.svg'
 import { motion } from 'framer-motion'
 
 const viewAnimation = {
@@ -30,9 +30,9 @@ const ItemDesc = (props: any) => {
 		<motion.div className={styles.backgroundWrapper}>
 			<Image src={ellipse59} alt='' className={styles.ellipseRight} />
 			<Image src={ellipse60} alt='' className={styles.ellipseLeft} />
-			<Link href='/'>
-				<Image src={NFTCore} alt='nftcore' className={styles.nftIndex} />
-			</Link>
+
+			<Image src={NFTCore} alt='nftcore' className={styles.nftIndex} />
+			{/* <Link href='/'></Link> */}
 			<motion.div
 				initial='hidden'
 				whileInView='visible'
@@ -48,7 +48,7 @@ const ItemDesc = (props: any) => {
 				<MImage
 					loader={() => props.data.image}
 					src={props.data.image}
-					alt={props.data.title}
+					alt={props?.data.title}
 					variants={viewAnimation}
 					custom={3}
 					width={150}

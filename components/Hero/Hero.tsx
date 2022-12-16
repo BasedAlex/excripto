@@ -1,7 +1,5 @@
 import { Button } from 'antd'
-import Image from 'next/image'
 import React from 'react'
-import groups from '../../../public/Groups.svg'
 import styles from './Hero.module.css'
 import { motion } from 'framer-motion'
 

@@ -1,9 +1,9 @@
 import Image from 'next/image'
 import React from 'react'
-import nftcore from '../../../public/NFTcore.svg'
-import facebook from '../../../public/facebook.svg'
-import linkedin from '../../../public/linkedin.svg'
-import twitter from '../../../public/twitter.svg'
+import nftcore from '../../public/NFTcore.svg'
+import facebook from '../../public/facebook.svg'
+import linkedin from '../../public/linkedin.svg'
+import twitter from '../../public/twitter.svg'
 import styles from './Footer.module.css'
 import { CopyrightOutlined } from '@ant-design/icons'
 
