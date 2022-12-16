@@ -5,28 +5,6 @@ const nextConfig = {
 	images: {
 		domains: ['https://fakestoreapi.com/', 'localhost'],
 	},
-	remotePatterns: [
-		{
-			protocol: 'https',
-			hostname: 'fakestoreapi.com',
-			port: '',
-			pathname: '/img/',
-		},
-	],
 }
 
 module.exports = nextConfig
-
-module.exports = {
-	images: {
-		domains: ['https://fakestoreapi.com/', 'localhost'],
-		remotePatterns: [
-			{
-				protocol: 'https',
-				hostname: 'fakestoreapi.com',
-				port: '',
-				pathname: 'img',
-			},
-		],
-	},
-}

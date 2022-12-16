@@ -29,7 +29,7 @@ const viewAnimation = {
 	}),
 }
 
-const Auction = (data: any): any => {
+const Auction = (data: any) => {
 	return (
 		<>
 			<motion.div
