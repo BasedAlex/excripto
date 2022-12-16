@@ -31,8 +31,9 @@ const ItemDesc = (props: any) => {
 			<Image src={ellipse59} alt='' className={styles.ellipseRight} />
 			<Image src={ellipse60} alt='' className={styles.ellipseLeft} />
 
-			<Image src={NFTCore} alt='nftcore' className={styles.nftIndex} />
-			{/* <Link href='/'></Link> */}
+			<Link href='/'>
+				<Image src={NFTCore} alt='nftcore' className={styles.nftIndex} />
+			</Link>
 			<motion.div
 				initial='hidden'
 				whileInView='visible'

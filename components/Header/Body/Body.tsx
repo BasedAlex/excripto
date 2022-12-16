@@ -27,7 +27,10 @@ const viewAnimation = {
 	visible: (custom: number) => ({
 		x: 0,
 		opacity: 1,
-		transition: { delay: custom * 0.1 },
+		transition: {
+			duration: 0.8,
+			delay: custom * 0.2,
+		},
 	}),
 }
 
