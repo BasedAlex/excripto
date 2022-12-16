@@ -135,11 +135,7 @@ const Body = () => {
 							</div>
 						</div>
 					</motion.div>
-					<motion.div
-						// variants={cardViewAnimation}
-						// custom={1}
-						className={styles.card}
-					>
+					<motion.div className={styles.card}>
 						<div>
 							<h3 className={styles.cardMainText}>210 Digital Artwork</h3>
 							<p className={styles.textBlue}>

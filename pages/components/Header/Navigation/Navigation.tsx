@@ -18,7 +18,6 @@ const Navigation = () => {
 					<p>Marketplace</p>
 				</div>
 				<p className={styles.textItem}>How it Work</p>
-				{/* <SearchOutlined className={styles.textItem} /> */}
 				<Button
 					type='ghost'
 					shape='circle'

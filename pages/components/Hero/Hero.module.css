@@ -63,8 +63,6 @@
 	}
 }
 
-/* @keyframes rotate:nth-child(2)  */
-
 @keyframes dash {
 	0% {
 		stroke-dasharray: 1, 150;
