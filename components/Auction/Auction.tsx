@@ -7,15 +7,19 @@ import circleGroup from '../../public/circleGroup.svg'
 import { Button } from 'antd'
 import Link from 'next/link'
 import { motion } from 'framer-motion'
+import { BellOutlined } from '@ant-design/icons'
+import { useAppDispatch } from '../../hooks/redux-hooks'
+import { addToFavAction } from '../../store/reducers/item/item-action'
+import { ItemsType } from '../../store/reducers/item/item-reducer'
 
-export type ItemsType = {
-	id: number
-	title: string
-	price: number
-	description: string
-	category: string
-	image: string
-}
+// export type ItemsType = {
+// 	id: number
+// 	title: string
+// 	price: number
+// 	description: string
+// 	category: string
+// 	image: string
+// }
 
 const viewAnimation = {
 	hidden: {
@@ -30,6 +34,13 @@ const viewAnimation = {
 }
 
 const Auction = (data: any) => {
+	const dispatch = useAppDispatch()
+
+	const products = data.data.data
+
+	const handleAddToFav = (product: ItemsType) => {
+		dispatch(addToFavAction(product))
+	}
 	return (
 		<>
 			<motion.div
@@ -104,6 +115,13 @@ const Auction = (data: any) => {
 										<div className={styles.subtitleWrapper}>
 											<Image src={avatar} alt='' />
 											<p className={styles.textBiege}>{item.title}</p>
+											<Button
+												ghost={true}
+												size='large'
+												shape='round'
+												icon={<BellOutlined />}
+												onClick={() => handleAddToFav(item)}
+											/>
 										</div>
 									</div>
 

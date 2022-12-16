@@ -1,12 +1,20 @@
 import { SearchOutlined } from '@ant-design/icons'
-import { DownloadOutlined } from '@ant-design/icons/lib/icons'
+import { DownloadOutlined, HeartOutlined } from '@ant-design/icons/lib/icons'
 import { Button } from 'antd'
 import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
+import { useAppSelector } from '../../../hooks/redux-hooks'
+
 import NFTCore from '../../../public/NFTcore.svg'
+import { RootState } from '../../../store'
 import styles from './Navigation.module.css'
 
 const Navigation = () => {
+	const favTotalQuantity = useAppSelector(
+		(state: RootState) => state.item.favTotalQuantity
+	)
+
 	return (
 		<header className={styles.header}>
 			<div className={styles.textLayout}>
@@ -39,6 +47,15 @@ const Navigation = () => {
 					icon={<DownloadOutlined />}
 					size='large'
 				/>
+				<Link href={'/cart'} className={styles.favs}>
+					<Button
+						type='primary'
+						shape='circle'
+						icon={<HeartOutlined />}
+						size='large'
+					></Button>
+					<p>{favTotalQuantity !== 0 ? favTotalQuantity : ''}</p>
+				</Link>
 			</div>
 		</header>
 	)

@@ -38,3 +38,18 @@
 	color: white;
 	margin: 0;
 }
+
+.favs {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+
+.favs p {
+	position: absolute;
+	top: 0;
+	right: 3px;
+	bottom: 10px;
+	color: white;
+}
